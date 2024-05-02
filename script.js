@@ -17,3 +17,10 @@ function drawGrid(gridSize) {
     return grid;
 };
 drawGrid(gridSize);
+
+grid.addEventListener('mouseover', (e) => {
+    const gridPart = e.target;
+    gridPart.style.backgroundColor = "black";
+})
+
+
